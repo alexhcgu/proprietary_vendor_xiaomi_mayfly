@@ -498,6 +498,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/sensors/config/sx933x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx933x_0.json \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/sensors/config/tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3408.json \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/sensors/config/tmd3719.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tmd3719.json \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/thermal-4k.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-4k.conf \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/thermal-abnormal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-abnormal.conf \
