@@ -991,6 +991,7 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
     libmorpho_ubwc \
+    libmorpho_video_stabilizer \
     libmpbase \
     libomp \
     libopencv \
