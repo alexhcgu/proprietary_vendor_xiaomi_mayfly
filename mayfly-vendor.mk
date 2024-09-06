@@ -882,7 +882,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.xr \
     com.qualcomm.qti.mcx.usecase.extension \
-    audio.primary.taro \
+    audio.primary.taro-mayfly \
     camera.qcom \
     camera.xiaomi \
     com.qti.chi.override \
