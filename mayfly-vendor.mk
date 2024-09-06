@@ -435,9 +435,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mayfly/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/mdss_dsi_l3s_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_l3s_42_02_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/sensors/config/bmp285_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp285_0.json \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/sensors/config/bu27030_0_back.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bu27030_0_back.json \
@@ -887,7 +884,6 @@ PRODUCT_PACKAGES += \
     camera.xiaomi \
     com.qti.chi.override \
     fingerprint.goodix_fod.default \
-    gyro_fusion_interface \
     vendor.xiaomi.hardware.quickcamera@1.0-impl \
     libAF \
     libMiMotion \
@@ -896,17 +892,12 @@ PRODUCT_PACKAGES += \
     libSnpeHtpV69Stub \
     libTrueSight \
     libXMFaceFocus \
-    libadm \
-    libadsprpc \
     libagm \
     libaidenoiser \
     libalCFR \
     libanc_dc_base \
     libanc_hdr \
     libancbase \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
     libar-pal \
     libarc_sat \
     libarc_translate \
@@ -919,10 +910,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_qnnhtp \
     libarcsoft_super_night_detection \
     libarcsoft_super_night_raw \
-    libats \
-    libaudio_log_utils \
-    libaudiocloudctrl \
-    libaudioroute_ext \
     libbeauty_face_interface \
     libbitmlengine \
     libbitmlenginev2 \
@@ -945,9 +932,6 @@ PRODUCT_PACKAGES += \
     libcamxswispiqmodule \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
-    libcapiv2svacnnvendor \
-    libcapiv2svarnnvendor \
-    libcapiv2uvvendor \
     libceres \
     libchilog \
     libcom.qti.chinodeutils \
@@ -957,7 +941,6 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.pluginutils \
     libcvp2_1 \
-    libdapparamstorage \
     libdeflicker \
     libdeflickerNM \
     libdualcam_optical_zoom_control \
@@ -970,9 +953,6 @@ PRODUCT_PACKAGES += \
     libipebpsstriping480 \
     libjpege \
     libkaraokepal \
-    liblx-ar_util \
-    liblx-osal \
-    libmcs \
     libmctfengine_stub \
     libmemunreachable \
     libmfGhostDetection \
@@ -1003,7 +983,6 @@ PRODUCT_PACKAGES += \
     libmiphone_capture_ldc \
     libmiphone_preview_bokeh \
     libmiphone_preview_ldc \
-    libmisight \
     libmmcamera_bestats \
     libmmcamera_cac3 \
     libmmcamera_lscv35 \
@@ -1016,18 +995,15 @@ PRODUCT_PACKAGES += \
     libopencv3a \
     libopestriping \
     libos \
-    libpal_net_if \
     libqll \
     libqll10 \
     libqllengine \
     libqshcamera \
     libqti_vndfwk_detect \
-    libqtigefar \
     libquickcamera \
     librelight_only \
     libremosaic_wrapper \
     libremosaiclib \
-    libresampler \
     libsfeShiftExtrapolation \
     libsnpe_dsp_domains_v2 \
     libsnpe_dsp_domains_v3 \
@@ -1049,13 +1025,11 @@ PRODUCT_PACKAGES += \
     libvidhance_ldc \
     libvidhance_stabilizer \
     libvidhance_super_stabilization \
-    libxlog \
     libxmi_hdr_checker \
     libxmi_high_dynamic_range \
     libxmi_high_dynamic_range_cdsp \
     libxmi_slow_motion_mein \
     libxmi_slow_motion_triger \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
