@@ -941,7 +941,6 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.mawutils \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.pluginutils \
-    libcvp2_1 \
     libdeflicker \
     libdeflickerNM \
     libdualcam_optical_zoom_control \
