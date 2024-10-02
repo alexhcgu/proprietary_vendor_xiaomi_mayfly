@@ -1001,7 +1001,6 @@ PRODUCT_PACKAGES += \
     libqll10 \
     libqllengine \
     libqshcamera \
-    libqti_vndfwk_detect \
     libquickcamera \
     librelight_only \
     libremosaic_wrapper \
