@@ -4701,7 +4701,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgf_hal.so"],
-			shared_libs: ["libhidlbase", "libhwbinder", "libhidltransport", "libutils", "libcutils", "liblog", "libhardware", "libion", "libdmabufheap", "libQSEEComAPI", "vendor.xiaomi.hardware.fx.tunnel@1.0", "libc", "libm", "libdl", "libc++", ],
+			shared_libs: ["libhidlbase", "libhwbinder", "libhidltransport", "libutils", "libcutils", "liblog", "libhardware", "libion", "libdmabufheap", "libQSEEComAPI",  "libc", "libm", "libdl", "libc++", ],
 		},
 	},
 	compile_multilib: "64",
@@ -6977,23 +6977,6 @@ prebuilt_rfsa {
 	src: "proprietary/vendor/lib/rfsa/adsp/misound_res_spk4ch.bin",
 	relative_install_path: "adsp",
 	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.fx.tunnel@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
 }
 
 prebuilt_etc_xml {
