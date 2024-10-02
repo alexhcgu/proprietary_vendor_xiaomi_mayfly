@@ -5305,6 +5305,25 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libmiphone_preview_depth",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmiphone_preview_depth.so"],
+			shared_libs: ["libmialgo_ai_vision", "libmialgo_utils", "libOpenCL", "libcdsprpc", "libc++_shared", "liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+
+
+cc_prebuilt_library_shared {
 	name: "libmiphone_preview_ldc",
 	owner: "xiaomi",
 	strip: {
