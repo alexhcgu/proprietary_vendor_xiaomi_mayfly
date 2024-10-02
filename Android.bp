@@ -3572,7 +3572,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/camera.qcom.so"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libsync", "android.hardware.graphics.common@1.1", "libhardware", "libhidlbase", "libhidltransport", "libcamera_metadata", "libcamxcommonutils", "libcamxsettingsmanager",  "libutils", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libcamxfdengine", "libcamxhwnodecontext", "libcamximageformatutils", "libcamxstatscore", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libqmi_cci", "libqmi_common_so", "libqmi_encdec", "libsensorslog", "libsnsapi", "libtinyxml2_1", "libAF", "libMiMotion", "libmialgo_globalsaliency", "libcamlog", "android.frameworks.sensorservice@1.0", "libeva", "libcvp2_1", "libsynx", "libXMFaceFocus", "libmemunreachable", "libz", "libdl", "libc", "libm", ],
+			shared_libs: ["libc++", "libcutils", "liblog", "libsync", "android.hardware.graphics.common@1.1", "libhardware", "libhidlbase", "libhidltransport", "libcamera_metadata", "libcamxcommonutils", "libcamxsettingsmanager",  "libutils", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libcamxfdengine", "libcamxhwnodecontext", "libcamximageformatutils", "libcamxstatscore", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libqmi_cci", "libqmi_common_so", "libqmi_encdec", "libsensorslog", "libsnsapi", "libtinyxml2_1", "libAF", "libMiMotion", "libmialgo_globalsaliency", "libcamlog", "android.frameworks.sensorservice@1.0", "libeva",  "libsynx", "libXMFaceFocus", "libmemunreachable", "libz", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "64",
@@ -4583,23 +4583,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcom.xiaomi.pluginutils.so"],
 			shared_libs: ["liblog", "libutils", "libcutils", "libcamera_metadata", "libcom.xiaomi.debug", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcvp2_1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcvp2_1.so"],
-			shared_libs: ["liblog", "libbase", "libdmabufheap", "libutils", "libcv_common", "libvmmem", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
