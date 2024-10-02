@@ -955,7 +955,6 @@ PRODUCT_PACKAGES += \
     libjpege \
     libkaraokepal \
     libmctfengine_stub \
-    libmemunreachable \
     libmfGhostDetection \
     libmiStereoFactoryRemapBasicLib \
     libmi_supernight_raw_checker \
