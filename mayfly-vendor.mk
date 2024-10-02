@@ -1118,7 +1118,6 @@ PRODUCT_PACKAGES += \
     misound_res_headphone \
     misound_res_spk \
     misound_res_spk4ch \
-    vendor.xiaomi.hardware.fx.tunnel@1.0 \
     vendor.xiaomi.hardware.quickcamera@1.0-service \
     batterysecret \
     android.hardware.camera.provider@2.7-virtual-camera-service \
