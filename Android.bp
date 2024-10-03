@@ -4701,7 +4701,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgf_hal.so"],
-			shared_libs: ["libhidlbase", "libhwbinder", "libhidltransport", "libutils", "libcutils", "liblog", "libhardware", "libion", "libdmabufheap", "libQSEEComAPI", "libc", "libm", "libdl", "libc++", ],
+			shared_libs: ["libhidlbase", "libhwbinder", "libhidltransport", "libutils", "vendor.xiaomi.hardware.fx.tunnel@1.0", "libcutils", "liblog", "libhardware", "libion", "libdmabufheap", "libQSEEComAPI", "libc", "libm", "libdl", "libc++", ],
 		},
 	},
 	compile_multilib: "64",
