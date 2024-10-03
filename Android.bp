@@ -13,6 +13,23 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libmiphone_preview_depth",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmiphone_preview_depth.so"],
+			shared_libs: ["libmialgo_ai_vision", "libmialgo_utils", "libOpenCL", "libcdsprpc", "libc++_shared", "liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "camera.device@3.2-impl",
 	owner: "xiaomi",
 	strip: {
@@ -4591,23 +4608,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libcvp2_1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcvp2_1.so"],
-			shared_libs: ["liblog", "libbase", "libdmabufheap", "libutils", "libcv_common", "libvmmem", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libdeflicker",
 	owner: "xiaomi",
 	strip: {
@@ -4821,23 +4821,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmctfengine_stub.so"],
 			shared_libs: ["libc++", "libcutils", "liblog", "libsync", "android.hardware.graphics.common@1.1", "libhardware", "libhidlbase", "libhidltransport", "libcamera_metadata", "libcamxcommonutils", "libcamxsettingsmanager", "libqti_vndfwk_detect", "libutils", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libcdsprpc", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmemunreachable",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmemunreachable.so"],
-			shared_libs: ["libbase", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -5626,25 +5609,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqti_vndfwk_detect",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqti_vndfwk_detect.so"],
-			shared_libs: ["libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-	vendor_available: false,
-	system_ext_available: true,
 }
 
 cc_prebuilt_library_shared {
